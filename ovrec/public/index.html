@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Screen Recorder</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Online Screen Recorder</h1>
+
+    <div class="radio-group">
+      <label><input type="radio" name="mode" value="screen" checked> Screen Only</label>
+      <label><input type="radio" name="mode" value="screen+mic"> Screen + Mic</label>
+      <label><input type="radio" name="mode" value="screen+webcam"> Screen + Webcam + Mic</label>
+    </div>
+
+    <div class="button-group">
+      <button id="startBtn">Start Recording</button>
+      <button id="stopBtn" disabled>Stop Recording</button>
+    </div>
+
+    <div id="countdownOverlay"></div>
+
+    <video id="finalPreview" controls class="hidden"></video>
+    <a id="downloadLink" style="display: none;" download="recording.webm">Download Final Video</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
