@@ -59,15 +59,17 @@ Contributions toward any of these (or other ideas) are welcome — please open a
 
 ## 📦 Self-Hosting
 
-ovrec is extremely lightweight and can be self-hosted in just a few steps. A `docker-compose.yaml` file is included for convenience. Just clone the repo and run:
+ovrec is extremely lightweight and can be self-hosted in just a few steps. Just clone the repo and run:
 
 ```bash
+npm install -g http-server
+
 git clone https://github.com/kbkozlev/ovrec.git
 cd ovrec
-docker-compose up -d
+http-server ./app -p 80 
 ```
 
-Then open [http://localhost](http://localhost) to use ovrec on your own server.
+Then open [http://localhost:80](http://localhost:80) to use ovrec on your own server.
 
 ---
 
