@@ -1,7 +1,0 @@
-services:
-  web:
-    image: nginx:alpine
-    container_name: ovrec
-    ports:
-      - "80:80"
-    restart: unless-stopped
