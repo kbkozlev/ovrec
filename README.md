@@ -62,7 +62,7 @@ Contributions toward any of these (or other ideas) are welcome — please open a
 ovrec is extremely lightweight and can be self-hosted in just a few steps. A `docker-compose.yaml` file is included for convenience. Just clone the repo and run:
 
 ```bash
-git pull https://github.com/kbkozlev/ovrec.git
+git clone https://github.com/kbkozlev/ovrec.git
 cd ovrec
 docker-compose up -d
 ```
