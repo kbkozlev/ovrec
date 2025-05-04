@@ -68,7 +68,7 @@ git clone https://github.com/kbkozlev/ovrec.git
 cd ovrec
 http-server ./app -p 80 
 # or to run in background
-nohup http-server ./app -p 8080 > output.log 2>&1 & 
+nohup http-server ./app -p 80 > output.log 2>&1 & 
 # to kill the background process
 pkill -f "http-server"
 ```
