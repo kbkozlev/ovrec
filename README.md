@@ -65,10 +65,9 @@ ovrec is extremely lightweight and can be self-hosted in just a few steps. Just 
 npm install -g http-server
 
 git clone https://github.com/kbkozlev/ovrec.git
-cd ovrec
-http-server ./app -p 80 
+http-server ./ovrec -p 80 
 # or to run in background
-nohup http-server ./app -p 80 > output.log 2>&1 & 
+nohup http-server ./ovrec -p 80 > output.log 2>&1 & 
 # to kill the background process
 pkill -f "http-server"
 ```
