@@ -4,7 +4,7 @@
 
 All processing is done **locally in your browser** using modern Web APIs, ensuring that **no video or audio data is ever uploaded or shared**. Your recordings remain completely private and secure — as they should be.
 
-[Try for Free!](https://ovrec.kozlev.com/)
+[Try for Free!](https://kbkozlev.github.io/ovrec/)
 ---
 
 ## 🚀 Why ovrec?
