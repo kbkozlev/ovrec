@@ -6,16 +6,27 @@
   <title>Online Video Recorder</title>
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
   <div class="container">
     <h1>Online Video Recorder</h1>
 
     <div class="radio-group">
-      <label><input type="radio" name="mode" value="screen" checked> Screen Only</label>
-      <label><input type="radio" name="mode" value="screen+mic"> Screen + Mic</label>
-      <label><input type="radio" name="mode" value="screen+webcam"> Screen + Webcam + Mic</label>
+      <label>
+        <input type="radio" name="mode" value="screen" checked>
+        <i class="fas fa-desktop"></i> Screen Only
+      </label>
+      <label>
+        <input type="radio" name="mode" value="screen+mic">
+        <i class="fas fa-desktop"></i> + <i class="fas fa-microphone"></i> Mic
+      </label>
+      <label>
+        <input type="radio" name="mode" value="screen+webcam">
+        <i class="fas fa-desktop"></i> + <i class="fas fa-video"></i> + <i class="fas fa-microphone"></i> Webcam + Mic
+      </label>
     </div>
+    
 
     <div class="button-group">
       <button id="startBtn">Start Recording</button>
@@ -26,6 +37,12 @@
 
     <video id="finalPreview" controls class="hidden"></video>
     <a id="downloadLink" style="display: none;" download="recording.webm">Download Final Video</a>
+  </div>
+
+  <div class="footer">
+    <a href="https://github.com/kbkozlev/ovrec" target="_blank" style="text-decoration: none; color: inherit;">
+      <i class="fab fa-github"></i> View on GitHub
+    </a>
   </div>
 
   <script src="script.js"></script>
